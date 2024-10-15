@@ -35,14 +35,17 @@ const Login = () => {
       <form onSubmit={handleLogin}>
         <input
           type='email'
-          placeholder='email'
+          placeholder='test.account@gmail.com'
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type='password'
-          placeholder='password'
+          placeholder='test@123'
           onChange={(e) => setPassword(e.target.value)}
         />
+        <br />
+        <h6>Use the given credentials</h6>
+        <br />
         <button type='submit'>Login</button>
         {error && <span>Wrong email or password!</span>}
       </form>
